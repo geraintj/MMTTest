@@ -8,7 +8,7 @@ GO
 -- Description:	returns products filtered by category
 -- =============================================
 CREATE PROCEDURE GetProductsByCategory
-	@Category nvarchar(10)
+	@Category nvarchar(50)
 AS
 BEGIN
 	SET NOCOUNT ON;
