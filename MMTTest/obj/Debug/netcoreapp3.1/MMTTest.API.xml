@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MMTTest.API</name>
+    </assembly>
+    <members>
+        <member name="T:MMTTest.API.Controllers.CategoryController">
+            <summary>
+            API controller returning Category entities
+            </summary>
+        </member>
+        <member name="M:MMTTest.API.Controllers.CategoryController.GetAll">
+            <summary>
+            Returns all stored entities of the type Category
+            </summary>
+            <returns>Categories</returns>
+        </member>
+        <member name="T:MMTTest.API.Controllers.ProductController">
+            <summary>
+            API controller returning Product entities
+            </summary>
+        </member>
+        <member name="M:MMTTest.API.Controllers.ProductController.GetAll">
+            <summary>
+            Returns all stored entities of the type Product
+            </summary>
+            <returns>Products</returns>
+        </member>
+        <member name="M:MMTTest.API.Controllers.ProductController.GetFeatured">
+            <summary>
+            Returns featured Product entities; 
+            SKUs to "feature" defined in configuration
+            </summary>
+            <returns>Products</returns>
+        </member>
+        <member name="M:MMTTest.API.Controllers.ProductController.GetByCategory(System.String)">
+            <summary>
+            Returns Product entities in the specified Category
+            </summary>
+            <param name="category">Category name</param>
+            <returns>Products</returns>
+        </member>
+        <member name="M:MMTTest.API.Controllers.ProductController.GetBySku(System.String)">
+            <summary>
+            Returns a single Product with the specified SKU
+            </summary>
+            <param name="sku">Identifier of Product</param>
+            <returns>Product</returns>
+        </member>
+    </members>
+</doc>
